@@ -29,4 +29,4 @@
   Mark Powalisz
 
 
-![alt text] /public/assets/img/petAlliance.gif "petAlliance")
+![alt text](/public/assets/img/petAlliance.gif "petAlliance")
