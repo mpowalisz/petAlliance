@@ -1,25 +1,25 @@
 {{!-- Works --}}
 <h1>Help control the pet population. Have your pets spayed or neutered. ~ Bob Barker</h1>
 
-<h2>Dogs that need to be spayed or neutered!</h2>
+<div class='row'>
 
-<ul>
-  {{#each dogs}}
-    {{#unless spayed}}
-      {{> dogs/dog-block spayed=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+   
+    <h2>Dogs that need to be spayed or neutered!</h2>
 
-<h2>Dogs that are spayed or neutered!</h2>
+    <ul>
+      {{#each dogs}} {{#unless spayed}} {{> dogs/dog-block spayed=true}} {{/unless}} {{/each}}
+    </ul>
+  </div>
 
-<ul>
-  {{#each dogs}}
-    {{#if spayed}}
-      {{> dogs/dog-block spayed=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+  <div  class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <h2>Dogs that are spayed or neutered!</h2>
+
+    <ul>
+      {{#each dogs}} {{#if spayed}} {{> dogs/dog-block spayed=false}} {{/if}} {{/each}}
+    </ul>
+  </div>
+</div>
 
 <h2>Add a Dog</h2>
 <form class="create-form">
@@ -30,8 +30,10 @@
   </div>
 
   <div class="form-group">
-    <label for="spayed">Spayed?</label><br>
-    <input type="radio" name="spayed" value="1" checked> Spayed!<br>
+    <label for="spayed">Spayed?</label>
+    <br>
+    <input type="radio" name="spayed" value="1" checked> Spayed!
+    <br>
     <input type="radio" name="spayed" value="0"> Not Spayed
   </div>
 
