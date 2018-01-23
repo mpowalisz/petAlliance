@@ -3,10 +3,10 @@ $(function() {
     $(".change-spayed").on("click", function(event) {
       var id = $(this).data("id");
       var newSpayed = $(this).data("newspayed");
-      console.log(id);
+      // console.log(id);
   
       var newSpayedState = {
-        Spayed: newSpayed
+        spayed: newSpayed
       };
   
       // Send the PUT request.
