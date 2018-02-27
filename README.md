@@ -1,7 +1,7 @@
 # petAlliance
 
 ## Description
-  * This site helps the local pet shelter identify an animal and their current status of being spayed or neutered.
+  This site helps the local pet shelter identify an animal and their current status of being spayed or neutered.
 
 ## Getting Started
   * Clone the repository.
