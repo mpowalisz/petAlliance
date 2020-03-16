@@ -1,9 +1,9 @@
 <li>
-	{{name}}
+  {{name}}
 
-	<button class="change-spayed" data-id="{{id}}" data-newspayed="{{spayed}}">
-		{{#if spayed}}SPAYING TIME!{{else}}ALREADY SPAYED!{{/if}}
-	</button>
+  <button class="btn btn-primary m-1 change-spayed" data-id="{{id}}" data-newspayed="{{spayed}}">
+    {{#if spayed}}Spay!{{else}}Already Spayed{{/if}}
+  </button>
 
-	<button class="delete-dog" data-id="{{this.id}}">Dog Adopted! (Remove)</button>
+  <button class="btn btn-success m-1 delete-dog" data-id="{{this.id}}">Dog Adopted! (Remove)</button>
 </li>
