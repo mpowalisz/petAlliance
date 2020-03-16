@@ -10,7 +10,7 @@
 
   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-    <h2>Dogs that need to be spayed or neutered!</h2>
+    <h3>Dogs that need to be spayed or neutered!</h3>
 
     <ul>
       {{#each dogs}} {{#unless spayed}} {{> dogs/dog-block spayed=true}} {{/unless}} {{/each}}
@@ -18,7 +18,7 @@
   </div>
 
   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-    <h2>Dogs that are spayed or neutered!</h2>
+    <h3>Dogs that are spayed or neutered!</h3>
 
     <ul>
       {{#each dogs}} {{#if spayed}} {{> dogs/dog-block spayed=false}} {{/if}} {{/each}}
@@ -26,7 +26,7 @@
   </div>
 </div>
 
-<h2>Add a Dog</h2>
+<h3>Add a Dog</h3>
 <form class="create-form">
 
   <div class="form-group">
